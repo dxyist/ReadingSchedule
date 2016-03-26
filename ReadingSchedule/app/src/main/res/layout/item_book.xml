@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/img_bookImage"
+        android:layout_width="42sp"
+        android:layout_height="42sp"
+        android:layout_centerVertical="true"
+        android:layout_alignTop="@+id/txt_bookName"
+        android:layout_alignBottom="@+id/txt_bookReadingStatus"
+        android:src="@drawable/bookicon"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:paddingLeft="@dimen/fab_margin"
+        android:id="@+id/Llayout_bookContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/img_bookImage"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_bookName"
+            android:layout_width="match_parent"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="书名："
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:textSize="12sp"
+            android:id="@+id/txt_bookReadingStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="当前已阅读(10/100)页"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
