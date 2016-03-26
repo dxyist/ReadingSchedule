@@ -12,7 +12,7 @@ public class Book extends BookBaseClass{
     private String bookNameString;
     private int totalPageNumber;
 
-
+    // add something
 
     private int currentPageNumber;
 
